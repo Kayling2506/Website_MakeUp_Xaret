@@ -1,0 +1,59 @@
+/* Protección visual y overlay para imágenes */
+.img-protect{
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+/* Mantener la imagen visible pero sin interacción directa */
+.img-protect img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  pointer-events: none; /* evita clics directos sobre la imagen */
+  filter: none;
+}
+
+/* Overlay invisible que captura eventos y evita menú contextual/guardar */
+.img-protect__overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0); /* transparente */
+  cursor: default;
+  pointer-events: auto; /* captura eventos en lugar de la imagen */
+  border-radius: inherit;
+}
+
+/* Efecto visual opcional: ligera capa brillante al pasar el ratón (no permite guardar) */
+.img-protect:hover::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* Evitar selección global (puedes limitarlo si lo prefieres) */
+html, body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* Si quieres permitir selección en formularios o inputs, añade excepciones */
+input, textarea, select, button {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  user-select: text;
+}
+
+/* Bloqueo adicional: ocultar la URL real al arrastrar (algunos navegadores muestran la URL en ghost image) */
+.img-protect img::drag {
+  display: none;
+}
