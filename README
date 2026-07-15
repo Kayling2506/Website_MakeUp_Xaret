@@ -10,7 +10,6 @@
 
 Este proyecto es de código abierto y está bajo la tutela de la **Licencia Pública General de GNU v3.0 (GPL-3.0)**. Esto garantiza que el software y todo su código derivado permanezcan siempre libres, transparentes y accesibles para toda la comunidad.
 
----
 
 ### ⚖️ Resumen de la Licencia (GPLv3)
 
@@ -22,7 +21,6 @@ Para facilitar la comprensión de las libertades y responsabilidades que otorga 
 | **✓ Modificación:** Puedes alterar, rediseñar, expandir o remover cualquier parte del código según tus necesidades. | **✗ Sin Responsabilidad:** El autor original no se hace responsable por reclamos, daños o fallas derivadas del uso de este software. | **⚠ Compartir Igual:** Cualquier proyecto derivado o "fork" de este código debe distribuirse bajo esta misma licencia (GPLv3). |
 | **✓ Distribución:** Eres libre de compartir, publicar y redistribuir el código original o tus modificaciones. | | **⚠ Aviso de Licencia:** Debes incluir siempre el aviso de copyright original y una copia íntegra de la licencia GPLv3. |
 
----
 
 ### 📜 Aviso de Copyright Oficial
 
@@ -32,7 +30,6 @@ Para facilitar la comprensión de las libertades y responsabilidades que otorga 
 >
 > Este programa se distribuye con la esperanza de que sea útil, pero **SIN NINGUNA GARANTÍA**; ni siquiera la garantía implícita de *MERCANTIBILIDAD* o *APTITUD PARA UN PROPÓSITO PARTICULAR*. Consulte la [Licencia Pública General GNU](https://www.gnu.org/licenses/gpl-3.0.html) para obtener más detalles.
 
----
 
 ### 🔍 Notas del Repositorio
 
