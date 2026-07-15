@@ -35,7 +35,7 @@
           <p class="lead">¿Lista para un cambio de personalidad?</p>
           <div class="hero-actions">
             <a class="btn primary" href="#sobre-mi">Conocer más</a>
-            <a class="btn ghost" href="#metodos">Conocer métodos</a>
+            <a class="btn ghost" href="#metodos">¿No estas muy segura?</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -240,54 +240,85 @@
       }
     </style>
 
-    <!-- Testimonios -->
-    <section id="testimonios" class="section section-soft" aria-labelledby="testimonios-title">
-      <div class="container">
-        <h2 id="testimonios-title" class="section-title">Testimonios</h2>
-        <p class="section-lead">Historias reales de clientas que confiaron en mis pinceles.</p>
+   <!-- Estilos responsivos para Asesorías y Tips (Inmunes al caché) -->
+    <style>
+      .advice-container {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+        align-items: center !important;
+      }
+      
+      .advice-image-box {
+        width: 100% !important;
+        max-width: 420px !important;
+        height: 380px !important; /* Altura ideal para lucir cosméticos u orden */
+        border-radius: 16px !important;
+        overflow: hidden !important;
+        margin: 0 auto !important;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+        display: block !important;
+      }
 
-        <div class="testimonials-list-layout">
-          
-          <!-- Testimonio 1 -->
-          <div class="testimonial-card-item">
-            <div class="testimonial-card-img img-protect">
-              <!-- Cambia "Img/MakeUp_Brochas.png" por la foto del primer maquillaje/clienta -->
-              <img src="Img/MakeUp_Brochas.png" alt="Maquillaje de Irma" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
-              <div class="img-protect__overlay" aria-hidden="true"></div>
-            </div>
-            <div class="testimonial-card-text">
-              <p class="quote">"Me encantó el maquillaje para mi graduación. Duró toda la noche intacto y recibí muchísimos cumplidos. ¡Súper recomendada!"</p>
-              <span class="cite">Irma B, 2025</span>
-            </div>
-          </div>
+      .advice-list {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 24px 0 0 0 !important;
+      }
 
-          <!-- Testimonio 2 -->
-          <div class="testimonial-card-item">
-            <div class="testimonial-card-img img-protect">
-              <!-- Cambia "Img/MakeUp_Brochas.png" por la foto del segundo maquillaje/clienta -->
-              <img src="Img/MakeUp_Brochas.png" alt="Maquillaje de Francisca" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
-              <div class="img-protect__overlay" aria-hidden="true"></div>
-            </div>
-            <div class="testimonial-card-text">
-              <p class="quote">"Gabriela entendió perfectamente lo que quería para mi boda. Un look muy natural, luminoso y elegante. Su trabajo es impecable."</p>
-              <span class="cite">Francisca M, 2025</span>
-            </div>
-          </div>
+      .advice-list li {
+        margin-bottom: 18px !important;
+        line-height: 1.6 !important;
+        text-align: justify !important; /* Justificado impecable */
+        color: rgba(255, 255, 255, 0.9) !important;
+      }
 
-          <!-- Testimonio 3 -->
-          <div class="testimonial-card-item">
-            <div class="testimonial-card-img img-protect">
-              <!-- Cambia "Img/MakeUp_Brochas.png" por la foto del tercer maquillaje/clienta -->
-              <img src="Img/MakeUp_Brochas.png" alt="Automaquillaje con Alicia" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
-              <div class="img-protect__overlay" aria-hidden="true"></div>
-            </div>
-            <div class="testimonial-card-text">
-              <p class="quote">"Tomé un curso personalizado de automaquillaje con ella y aprendí muchísimo. Tiene mucha paciencia y te enseña con productos excelentes."</p>
-              <span class="cite">Alicia K, 2026</span>
-            </div>
-          </div>
+      .advice-text {
+        text-align: justify !important;
+        line-height: 1.6 !important;
+        color: rgba(255, 255, 255, 0.95) !important;
+      }
 
+      /* En computadoras y pantallas medianas (más de 768px): Texto a la izquierda, Imagen a la derecha */
+      @media (min-width: 768px) {
+        .advice-container {
+          grid-template-columns: 1fr 380px !important;
+          gap: 48px !important;
+        }
+        .advice-image-box {
+          margin: 0 !important;
+        }
+      }
+    </style>
+
+    <!-- Sección de Asesorías y Tips -->
+    <section id="asesorias" class="section section-soft" aria-labelledby="asesorias-title">
+      <div class="container advice-container">
+        
+        <!-- Columna 1: Texto e Información detallada -->
+        <div class="advice-content">
+          <h2 id="asesorias-title" class="section-title">Asesorías & Tips</h2>
+          <p class="advice-text">
+            ¿Te abruma ver tantos productos y no saber por dónde empezar? Mi servicio de <strong>Asesorías y Tips</strong> está diseñado para guiarte paso a paso. No se trata solo de maquillar, sino de darte las herramientas y el conocimiento necesario para que aprendas a resaltar tu belleza natural en tu día a día, de forma fácil, práctica y divertida.
+          </p>
+
+          <ul class="advice-list">
+            <li><strong>✨ Diagnóstico de Rostro y Piel:</strong> Analizaremos juntas tus facciones y tipo de cutis para que descubras qué técnicas, texturas y colores se adaptan mejor a ti.</li>
+            <li><strong>💄 Depuración de Cosmetiquera:</strong> Revisaremos los productos que ya tienes en casa. Te enseñaré a sacarles el máximo provecho y te diré qué básicos te conviene añadir.</li>
+            <li><strong>📝 Recomendaciones Personalizadas:</strong> Te armaré una lista de compras sugerida (marcas, tonos y brochas indispensables) que se ajuste al 100% a tu presupuesto.</li>
+            <li><strong>💡 Trucos Prácticos de Aplicación:</strong> Aprenderás tips sencillos para que tu base no se cuartee, tu delineado sea simétrico y tu look dure impecable todo el día.</li>
+          </ul>
         </div>
+
+        <!-- Columna 2: Imagen Ilustrativa -->
+        <div class="advice-media" aria-hidden="true">
+          <div class="advice-image-box img-protect">
+            <!-- Tip: Aquí puedes usar una foto donde salga una cosmetiquera ordenada, o un set de pinceles estético -->
+            <img src="Img/Borchas_Img_Port_Customer.png" alt="Asesorías y tips de maquillaje por Gabriela" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
+            <div class="img-protect__overlay" aria-hidden="true"></div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
