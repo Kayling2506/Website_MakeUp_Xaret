@@ -1,3 +1,9 @@
+/* Evitar scroll horizontal y mantener el contenido dentro del viewport */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* Corta y prohíbe cualquier scroll hacia los lados */
+}
+
 /* Protección visual y overlay para imágenes */
 .img-protect{
   position: relative;
