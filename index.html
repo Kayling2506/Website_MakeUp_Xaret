@@ -3,10 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Místico — Videncia Moderna</title>
-
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Hola, soy Gabriela, maquilladora, ofrezco una gran cantidad de variedades de maquillajes y de opciónes para ti">
+  <meta http-equiv="X-UA-Compatible" content="IE=7">
+  <meta name="keywords" content="Maquillaje, Makeup, Xaret, Profesional, Belleza, Estilo, Tendencias, Tutoriales, Consejos, Productos, Cosmética, Cuidado de la piel">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="tail.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="../js.js"></script>
+  <title>MakeUpXaret</title>
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -16,6 +22,7 @@
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#metodos">Nuestros métodos</a>
         <a href="#testimonios">Testimonios</a>
+        <a href="#section">Serviciós y Caracteristicas</a>
       </nav>
     </div>
   </header>
@@ -116,7 +123,7 @@
     </section>
 
     <!-- Servicios / Features grid -->
-    <section id="servicios" class="section" aria-labelledby="servicios-title">
+    <section id="" class="section" aria-labelledby="servicios-title">
       <div class="container">
         <h2 id="servicios-title" class="section-title">Servicios y características</h2>
         <p class="section-lead">Herramientas y servicios pensados para acompañarte en cada paso.</p>
@@ -188,19 +195,25 @@
   </main>
 
   <!-- Footer (insertado usando las clases definidas en styles.css) -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container footer-inner">
-      <div class="footer-about">
-        <h3 class="footer-title">Sobre maquillaje</h3>
-        <p class="footer-text">El maquillaje no cambia quién eres; revela quién quieres ser.</p>
-      </div>
-
-      <div class="footer-contact">
-        <p class="footer-email">Correo: <a href="mailto:paula@mistico.com">paula@mistico.com</a></p>
-        <p class="footer-rights">© <span id="year"></span> Místico — Todos los derechos reservados</p>
-      </div>
+  <footer class="site-footer site-footer--dark" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <h3 class="footer-title">Sobre maquillaje</h3>
+      <p class="footer-quote">«El maquillaje no cambia quién eres; revela quién quieres ser.»</p>
     </div>
-  </footer>
+
+    <div class="footer-center">
+      <p class="footer-contact-label">Correo</p>
+      <p class="footer-email">
+        <a href="mailto:paula@mistico.com" class="email-link">MakeUpXaret@mistico.com</a>
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-rights">© <span id="year"></span> MakeUp Xaret - Todos los Derechos Reservados</p>
+    </div>
+  </div>
+</footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
