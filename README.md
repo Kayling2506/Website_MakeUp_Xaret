@@ -1,0 +1,36 @@
+## 📄 Licencia / License
+
+<p align="center">
+<a href="https://www.gnu.org/licenses/gpl-3.0">
+<img src="https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge&logo=gnu&logoColor=white" alt="GPLv3 License"></a>
+  <a href="https://github.com/kayling2506">
+    <img src="https://img.shields.io/badge/Author-kayling2506-pink.svg?style=for-the-badge&logo=github" alt="Author">
+  </a>
+</p>
+
+Este proyecto es de código abierto y está bajo la tutela de la **Licencia Pública General de GNU v3.0 (GPL-3.0)**. Esto garantiza que el software y todo su código derivado permanezcan siempre libres, transparentes y accesibles para toda la comunidad.
+
+
+### ⚖️ Resumen de la Licencia (GPLv3)
+
+Para facilitar la comprensión de las libertades y responsabilidades que otorga esta licencia, aquí tienes un resumen ejecutivo estructurado:
+
+| 🟢 Permisos | 🔴 Limitaciones | 🔵 Condiciones |
+| :--- | :--- | :--- |
+| **✓ Uso Comercial:** Tienes permitido utilizar este software y sus derivados para fines comerciales o privados. | **✗ Sin Garantía:** El software se distribuye "tal cual" (*as-is*), sin garantías implícitas de ningún tipo. | **⚠ Revelar Código:** Si modificas este proyecto y lo distribuyes, estás obligado a hacer público el código fuente modificado. |
+| **✓ Modificación:** Puedes alterar, rediseñar, expandir o remover cualquier parte del código según tus necesidades. | **✗ Sin Responsabilidad:** El autor original no se hace responsable por reclamos, daños o fallas derivadas del uso de este software. | **⚠ Compartir Igual:** Cualquier proyecto derivado o "fork" de este código debe distribuirse bajo esta misma licencia (GPLv3). |
+| **✓ Distribución:** Eres libre de compartir, publicar y redistribuir el código original o tus modificaciones. | | **⚠ Aviso de Licencia:** Debes incluir siempre el aviso de copyright original y una copia íntegra de la licencia GPLv3. |
+
+
+### 📜 Aviso de Copyright Oficial
+
+> **Copyright © 2026 kayling2506 / [makeupxaret.com](https://makeupxaret.com)**
+>
+> Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la Licencia Pública General GNU publicada por la Fundación para el Software Libre, ya sea la versión 3 de la Licencia, o (a su elección) cualquier versión posterior.
+>
+> Este programa se distribuye con la esperanza de que sea útil, pero **SIN NINGUNA GARANTÍA**; ni siquiera la garantía implícita de *MERCANTIBILIDAD* o *APTITUD PARA UN PROPÓSITO PARTICULAR*. Consulte la [Licencia Pública General GNU](https://www.gnu.org/licenses/gpl-3.0.html) para obtener más detalles.
+
+
+### 🔍 Notas del Repositorio
+
+Si deseas consultar el texto legal completo de la licencia, puedes crear un archivo llamado `LICENSE` en la raíz de tu repositorio y pegar el texto oficial provisto por la [Free Software Foundation (FSF)](https://www.gnu.org/licenses/gpl-3.0.html).
