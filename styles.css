@@ -289,7 +289,6 @@ body{
   .site-footer--dark .footer-right{ text-align:center; }
 }
 
-
 /* Responsive */
 @media (max-width:1100px){
   .hero-grid{grid-template-columns:1fr 320px}
