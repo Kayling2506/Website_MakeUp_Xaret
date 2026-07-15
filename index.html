@@ -181,27 +181,112 @@
       </div>
     </section>
 
+    <!-- Estilos responsivos para Testimonios Individuales con Imagen (Inmunes al caché) -->
+    <style>
+      .testimonials-list-layout {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+        margin-top: 32px !important;
+      }
+
+      .testimonial-card-item {
+        background: rgba(255, 255, 255, 0.02) !important;
+        border: 1px solid rgba(255, 255, 255, 0.04) !important;
+        padding: 24px !important;
+        border-radius: 16px !important;
+        display: flex !important;
+        flex-direction: column !important; /* En celular: foto arriba, texto abajo */
+        gap: 20px !important;
+        align-items: center !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+      }
+
+      .testimonial-card-img {
+        width: 110px !important;
+        height: 110px !important;
+        border-radius: 12px !important; /* Esquinas redondeadas elegantes */
+        overflow: hidden !important;
+        flex-shrink: 0 !important;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
+      }
+
+      .testimonial-card-text {
+        text-align: center !important;
+        flex-grow: 1 !important;
+      }
+
+      .testimonial-card-text .quote {
+        font-style: italic !important;
+        color: rgba(255, 255, 255, 0.95) !important;
+        margin: 0 0 10px 0 !important;
+        line-height: 1.5 !important;
+      }
+
+      .testimonial-card-text .cite {
+        font-weight: 700 !important;
+        color: var(--accent-1) !important; /* Usamos tu color rosa de acento */
+      }
+
+      /* En computadoras y pantallas medianas (más de 768px): Imagen AL LADO del texto */
+      @media (min-width: 768px) {
+        .testimonial-card-item {
+          flex-direction: row !important; /* Imagen a la izquierda, texto a la derecha */
+          align-items: center !important;
+        }
+        .testimonial-card-text {
+          text-align: left !important; /* Texto alineado a la izquierda */
+        }
+      }
+    </style>
+
     <!-- Testimonios -->
     <section id="testimonios" class="section section-soft" aria-labelledby="testimonios-title">
       <div class="container">
         <h2 id="testimonios-title" class="section-title">Testimonios</h2>
-        <p class="section-lead">Historias reales de personas que encontraron claridad.</p>
+        <p class="section-lead">Historias reales de clientas que confiaron en mis pinceles.</p>
 
-        <div class="testimonials-grid">
-          <blockquote class="testimonial">
-            <p class="quote">"Estaba perdida, la numerología me ayudó a comprender mis puntos fuertes y ahora avanzo con confianza."</p>
-            <footer class="cite">Irma B, 2023</footer>
-          </blockquote>
+        <div class="testimonials-list-layout">
+          
+          <!-- Testimonio 1 -->
+          <div class="testimonial-card-item">
+            <div class="testimonial-card-img img-protect">
+              <!-- Cambia "Img/MakeUp_Brochas.png" por la foto del primer maquillaje/clienta -->
+              <img src="Img/MakeUp_Brochas.png" alt="Maquillaje de Irma" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
+              <div class="img-protect__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="testimonial-card-text">
+              <p class="quote">"Me encantó el maquillaje para mi graduación. Duró toda la noche intacto y recibí muchísimos cumplidos. ¡Súper recomendada!"</p>
+              <span class="cite">Irma B, 2025</span>
+            </div>
+          </div>
 
-          <blockquote class="testimonial">
-            <p class="quote">"La alineación de los astros me mostró patrones que no veía; me ayudó a tomar decisiones importantes."</p>
-            <footer class="cite">Francisca M, 2023</footer>
-          </blockquote>
+          <!-- Testimonio 2 -->
+          <div class="testimonial-card-item">
+            <div class="testimonial-card-img img-protect">
+              <!-- Cambia "Img/MakeUp_Brochas.png" por la foto del segundo maquillaje/clienta -->
+              <img src="Img/MakeUp_Brochas.png" alt="Maquillaje de Francisca" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
+              <div class="img-protect__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="testimonial-card-text">
+              <p class="quote">"Gabriela entendió perfectamente lo que quería para mi boda. Un look muy natural, luminoso y elegante. Su trabajo es impecable."</p>
+              <span class="cite">Francisca M, 2025</span>
+            </div>
+          </div>
 
-          <blockquote class="testimonial">
-            <p class="quote">"La bola de cristal me dio una visión clara del camino a seguir. Muy agradecida."</p>
-            <footer class="cite">Alicia K, 2022</footer>
-          </blockquote>
+          <!-- Testimonio 3 -->
+          <div class="testimonial-card-item">
+            <div class="testimonial-card-img img-protect">
+              <!-- Cambia "Img/MakeUp_Brochas.png" por la foto del tercer maquillaje/clienta -->
+              <img src="Img/MakeUp_Brochas.png" alt="Automaquillaje con Alicia" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
+              <div class="img-protect__overlay" aria-hidden="true"></div>
+            </div>
+            <div class="testimonial-card-text">
+              <p class="quote">"Tomé un curso personalizado de automaquillaje con ella y aprendí muchísimo. Tiene mucha paciencia y te enseña con productos excelentes."</p>
+              <span class="cite">Alicia K, 2026</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -218,7 +303,7 @@
     <div class="footer-center">
       <p class="footer-contact-label">Correo</p>
       <p class="footer-email">
-        <a href="mailto:paula@mistico.com" class="email-link">MakeUpXaret@mistico.com</a>
+        <a href="mailto:paula@mistico.com" class="email-link">MakeUpXaret@gmail.com.mx</a>
       </p>
     </div>
 
