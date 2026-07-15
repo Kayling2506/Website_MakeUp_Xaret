@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="MakeUpXaret.ico" type="image/x-icon">
   <link rel="stylesheet" href="tail.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=1">
   <script src="../js.js"></script>
   <title>MakeUpXaret</title>
 </head>
@@ -46,25 +46,56 @@
       </div>
     </section>
 
-    <!-- Sobre mi -->
+    <!-- Estilos específicos y responsivos para "Sobre mi" -->
+    <style>
+      /* En celulares (pantallas pequeñas): 1 sola columna y centrado */
+      .custom-about-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+        align-items: center !important;
+      }
+      
+      .custom-about-photo {
+        width: 100% !important;
+        max-width: 320px !important;
+        height: 320px !important;
+        margin: 0 auto !important;
+        display: block !important;
+      }
+
+      /* En computadoras (pantallas medianas y grandes de más de 768px): 2 columnas */
+      @media (min-width: 768px) {
+        .custom-about-grid {
+          grid-template-columns: 360px 1fr !important;
+        }
+        .custom-about-photo {
+          margin: 0 !important;
+        }
+      }
+    </style>
+
+    <!-- Sección Sobre mí -->
     <section id="sobre-mi" class="section section-soft" aria-labelledby="sobre-mi-title">
-      <div class="container about-grid">
+      <div class="container custom-about-grid">
+        
         <div class="about-media" aria-hidden="true">
-          <div class="about-photo" role="img" aria-label="Foto del profesional"></div>
+          <div class="about-photo img-protect custom-about-photo">
+            <!-- Recuerda cambiar la ruta de la imagen por tu foto final cuando quieras -->
+            <img src="Img/Portada_Person_My.png" alt="Foto de Gabriela" class="hero-icon" style="width: 100% !important; height: 100% !important; object-fit: cover !important;" />
+            <div class="img-protect__overlay" aria-hidden="true"></div>
+          </div>
         </div>
 
         <div class="about-content">
           <h2 id="sobre-mi-title" class="section-title">Sobre mí</h2>
           <p class="about-text">
-            Soy <strong>Gabriela</strong>, guía y consultora espiritual con años de experiencia en numerología,
-            clarividencia y lecturas intuitivas. Mi enfoque combina técnicas tradicionales con una visión moderna,
-            buscando ofrecer claridad y herramientas prácticas para tu camino.
+            Soy <strong>Gabriela</strong>, una apasionada del maquillaje profesional en constante crecimiento. Tras certificarme en diversas academias y cursos especializados, decidí dar el salto al campo profesional, donde ya he tenido la increíble oportunidad de realizar mis primeros trabajos para eventos sociales y sesiones de fotos. Creo firmemente que el maquillaje no debe transformar tu rostro, sino potenciar tu seguridad y resaltar tu versión más auténtica.
           </p>
-
           <ul class="about-list">
-            <li><strong>Formación:</strong> Estudios en numerología y prácticas de clarividencia.</li>
-            <li><strong>Enfoque:</strong> Lecturas personalizadas y acompañamiento práctico.</li>
-            <li><strong>Compromiso:</strong> Confidencialidad y respeto en cada sesión.</li>
+            <li><strong>Formación:</strong> Certificada en cursos de maquillaje social, técnicas de tendencia y cuidado de la piel.</li>
+            <li><strong>Experiencia:</strong> Proyectos reales y looks de evento realizados con excelentes resultados.</li>
+            <li><strong>Compromiso:</strong> Trabajar con productos de calidad y total dedicación para lograr el look que imaginas.</li>
           </ul>
 
           <div class="socials" aria-label="Redes sociales">
