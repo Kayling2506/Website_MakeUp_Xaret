@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Místico — Videncia Moderna</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#metodos">Nuestros métodos</a>
+        <a href="#testimonios">Testimonios</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero" role="region" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title" class="title">Místico</h1>
+          <p class="subtitle">VIDENCIA MODERNA</p>
+          <p class="lead">¿Quieres obtener respuestas?</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#sobre-mi">Conocer más</a>
+            <a class="btn ghost" href="#metodos">Conocer métodos</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="decor-svg" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.95"/>
+                <stop offset="1" stop-color="#ff6fb1" stop-opacity="0.95"/>
+              </linearGradient>
+              <filter id="f1" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="18" result="b"/>
+                <feBlend in="SourceGraphic" in2="b"/>
+              </filter>
+            </defs>
+            <circle cx="200" cy="200" r="140" fill="url(#g1)" filter="url(#f1)"/>
+            <g transform="translate(0,10)" fill="#fff" opacity="0.9">
+              <ellipse cx="200" cy="190" rx="70" ry="70" fill="rgba(255,255,255,0.06)"/>
+              <rect x="150" y="180" width="40" height="6" rx="3" fill="#fff" transform="rotate(-6 170 183)"/>
+              <rect x="210" y="180" width="40" height="6" rx="3" fill="#fff" transform="rotate(6 230 183)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="section section-soft" aria-labelledby="sobre-mi-title">
+      <div class="container about-grid">
+        <div class="about-media" aria-hidden="true">
+          <div class="about-photo" role="img" aria-label="Foto del profesional"></div>
+        </div>
+
+        <div class="about-content">
+          <h2 id="sobre-mi-title" class="section-title">Sobre mí</h2>
+          <p class="about-text">
+            Soy <strong>Paula</strong>, guía y consultora espiritual con años de experiencia en numerología,
+            clarividencia y lecturas intuitivas. Mi enfoque combina técnicas tradicionales con una visión moderna,
+            buscando ofrecer claridad y herramientas prácticas para tu camino.
+          </p>
+
+          <ul class="about-list">
+            <li><strong>Formación:</strong> Estudios en numerología y prácticas de clarividencia.</li>
+            <li><strong>Enfoque:</strong> Lecturas personalizadas y acompañamiento práctico.</li>
+            <li><strong>Compromiso:</strong> Confidencialidad y respeto en cada sesión.</li>
+          </ul>
+
+          <div class="socials" aria-label="Redes sociales">
+            <a class="social" href="#" aria-label="Instagram">Instagram</a>
+            <a class="social" href="#" aria-label="Facebook">Facebook</a>
+            <a class="social" href="#" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Métodos -->
+    <section id="metodos" class="section section-pink" aria-labelledby="metodos-title">
+      <div class="container">
+        <h2 id="metodos-title" class="section-title">Nuestros métodos</h2>
+        <p class="section-lead">Ya sea a través de lecturas de tarot, bola de cristal o numerología, te ofrecemos respuestas claras y precisas.</p>
+
+        <div class="cards-grid">
+          <article class="card method">
+            <div class="card-media icon numerology" aria-hidden="true"></div>
+            <h3 class="card-title">Numerología</h3>
+            <p class="card-text">La numerología descifra los números vinculados a una persona para descubrir rasgos de carácter y destino.</p>
+          </article>
+
+          <article class="card method">
+            <div class="card-media icon crystal" aria-hidden="true"></div>
+            <h3 class="card-title">Bola de cristal</h3>
+            <p class="card-text">La bola de cristal revela visiones y predicciones futuras a través de la clarividencia.</p>
+          </article>
+
+          <article class="card method">
+            <div class="card-media icon astrology" aria-hidden="true"></div>
+            <h3 class="card-title">Alineación de los astros</h3>
+            <p class="card-text">Observamos las influencias astrológicas para comprender su impacto en decisiones y ciclos vitales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios / Features grid -->
+    <section id="servicios" class="section" aria-labelledby="servicios-title">
+      <div class="container">
+        <h2 id="servicios-title" class="section-title">Servicios y características</h2>
+        <p class="section-lead">Herramientas y servicios pensados para acompañarte en cada paso.</p>
+
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">✎</div>
+            <h4 class="feature-title">Lecturas personalizadas</h4>
+            <p class="feature-desc">Sesiones adaptadas a tus preguntas más importantes.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">★</div>
+            <h4 class="feature-title">Guía espiritual</h4>
+            <p class="feature-desc">Acompañamiento para encontrar equilibrio y propósito.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">❤</div>
+            <h4 class="feature-title">Relaciones</h4>
+            <p class="feature-desc">Perspectivas sobre vínculos y decisiones afectivas.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">💬</div>
+            <h4 class="feature-title">Consultas en línea</h4>
+            <p class="feature-desc">Atención remota por videollamada o chat.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">🛡</div>
+            <h4 class="feature-title">Privacidad</h4>
+            <p class="feature-desc">Confidencialidad y respeto en cada sesión.</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">☰</div>
+            <h4 class="feature-title">Informes</h4>
+            <p class="feature-desc">Resúmenes escritos con recomendaciones prácticas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section section-soft" aria-labelledby="testimonios-title">
+      <div class="container">
+        <h2 id="testimonios-title" class="section-title">Testimonios</h2>
+        <p class="section-lead">Historias reales de personas que encontraron claridad.</p>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial">
+            <p class="quote">"Estaba perdida, la numerología me ayudó a comprender mis puntos fuertes y ahora avanzo con confianza."</p>
+            <footer class="cite">Irma B, 2023</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="quote">"La alineación de los astros me mostró patrones que no veía; me ayudó a tomar decisiones importantes."</p>
+            <footer class="cite">Francisca M, 2023</footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="quote">"La bola de cristal me dio una visión clara del camino a seguir. Muy agradecida."</p>
+            <footer class="cite">Alicia K, 2022</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (insertado usando las clases definidas en styles.css) -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-about">
+        <h3 class="footer-title">Sobre maquillaje</h3>
+        <p class="footer-text">El maquillaje no cambia quién eres; revela quién quieres ser.</p>
+      </div>
+
+      <div class="footer-contact">
+        <p class="footer-email">Correo: <a href="mailto:paula@mistico.com">paula@mistico.com</a></p>
+        <p class="footer-rights">© <span id="year"></span> Místico — Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
