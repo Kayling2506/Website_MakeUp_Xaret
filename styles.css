@@ -261,6 +261,20 @@ body{
 /* Si el overlay causa problemas, usa esto temporalmente */
 .img-protect__overlay{ pointer-events:auto; }
 
+/* Estilo para el enlace en su estado normal */
+.footer-link {
+    color: #64748B !important; /* Gris elegante que combina con todo */
+    text-decoration: none !important; /* Adiós al subrayado */
+    font-weight: 500;
+    transition: color 0.2s ease; /* Hace que el cambio de color al pasar el mouse sea suave */
+}
+
+/* Estilo cuando el usuario pasa el cursor por encima (Hover) */
+.footer-link:hover {
+    color: #D4AF37 !important; /* Cambia a un dorado elegante al pasar el mouse */
+    text-decoration: underline !important; /* El subrayado solo aparece sutilmente al pasar el cursor */
+}
+
 /* Responsive */
 @media (max-width:1100px){
   .about-photo.img-protect{ width:260px; height:260px; }
