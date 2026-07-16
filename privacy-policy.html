@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas de Privacidad y Términos de Uso | Makeup Xaret</title>
+    <style>
+        /* --- VARIABLES DE DISEÑO (Paleta de Colores Premium) --- */
+        :root {
+            --bg-color: #FAF8F6;
+            --card-bg: #FFFFFF;
+            --primary-gold: #D4AF37;
+            --rose-gold: #E5C3B3;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --border-color: #F1F5F9;
+            --accent-soft: rgba(229, 195, 179, 0.15);
+        }
+
+        /* --- ESTILOS GENERALES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+        }
+
+        /* --- CABECERA --- */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        .brand-logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--text-main);
+            margin-bottom: 5px;
+        }
+
+        .brand-subtitle {
+            font-size: 11px;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 20px;
+            color: var(--text-main);
+        }
+
+        .last-update {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        /* --- NAVEGACIÓN RÁPIDA --- */
+        .quick-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--rose-gold);
+            border-color: var(--rose-gold);
+            color: #FFFFFF;
+        }
+
+        /* --- SECCIONES Y TEXTO --- */
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-main);
+            border-left: 3px solid var(--primary-gold);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        p, li {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-gold);
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* --- CAJAS DESTACADAS (ALERTA/NOTAS) --- */
+        .alert-box {
+            background-color: var(--accent-soft);
+            border-left: 4px solid var(--rose-gold);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .alert-box p {
+            color: var(--text-main);
+            margin-bottom: 0;
+            font-size: 13.5px;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+        }
+
+        .back-home {
+            font-size: 14px;
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid var(--rose-gold);
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            color: var(--text-main);
+            border-color: var(--text-main);
+        }
+
+        /* --- RESPONSIVO --- */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+            .container {
+                padding: 30px 20px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="brand-logo">Makeup Xaret</div>
+            <div class="brand-subtitle">Estudio de Belleza & Imagen</div>
+            <h1>Términos de Uso y Aviso de Privacidad</h1>
+            <p class="last-update">Última actualización: Julio de 2026</p>
+        </header>
+
+        <nav class="quick-nav">
+            <a href="#informacion" class="nav-btn">Datos Recabados</a>
+            <a href="#cookies" class="nav-btn">Uso de Cookies</a>
+            <a href="#imagen" class="nav-btn">Derechos de Imagen</a>
+            <a href="#recomendaciones" class="nav-btn">Recomendaciones</a>
+            <a href="#autor" class="nav-btn">Derechos de Autor</a>
+        </nav>
+
+        <!-- ================= SECCIÓN 1: INFORMACIÓN PERSONAL Y TRATAMIENTO ================= -->
+        <section id="informacion">
+            <h2>1. Datos Personales y Tratamiento</h2>
+            <p>De conformidad con la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong> en México, le informamos que para llevar a cabo la reservación, cotización y diseño personalizado de sus servicios de maquillaje, recabamos los siguientes datos personales:</p>
+            <ul>
+                <li>Nombre completo.</li>
+                <li>Teléfono celular de contacto o WhatsApp.</li>
+                <li>Correo electrónico.</li>
+                <li>Fecha, hora y dirección del evento (para servicios a domicilio).</li>
+                <li>Preferencias de estilo, tipo de maquillaje y referencias visuales.</li>
+                <li>Medio por el cual nos esta contactando</li>
+            </ul>
+            <p><strong>Tratamiento de la información:</strong> Sus datos personales son tratados con absoluta confidencialidad y se utilizan únicamente con fines de agendamiento, comunicación logística directa sobre sus servicios contratados y, en su caso, aclaraciones sobre su cotización o pagos. No compartimos ni transferimos sus datos con terceros bajo ninguna circunstancia.</p>
+        </section>
+
+        <!-- ================= SECCIÓN 2: COOKIES Y TECNOLOGÍAS DE RASTREO ================= -->
+        <section id="cookies">
+            <h2>2. Uso de Cookies</h2>
+            <p>Este sitio web utiliza "cookies" y herramientas similares para mejorar y personalizar su experiencia de navegación. Las cookies son pequeños archivos de texto que se almacenan en su navegador web.</p>
+            <p>Utilizamos estas tecnologías para:</p>
+            <ul>
+                <li>Facilitar el rendimiento, velocidad y correcto funcionamiento técnico de la página.</li>
+                <li>Analizar de forma anónima el flujo de visitantes (por ejemplo, saber qué secciones son las más visitadas).</li>
+            </ul>
+            <p>Usted puede configurar, bloquear o eliminar las cookies directamente en la configuración de su navegador web en cualquier momento. Sin embargo, tenga en cuenta que desactivarlas podría afectar la funcionalidad de algunos elementos interactivos del sitio.</p>
+        </section>
+
+        <!-- ================= SECCIÓN 3: CONSENTIMIENTO DE IMAGEN ================= -->
+        <section id="imagen">
+            <h2>3. Consentimiento de Imagen y Portafolio</h2>
+            <p>De acuerdo con lo establecido en el <strong>Artículo 87 de la Ley Federal del Derecho de Autor</strong> en México, el uso y publicación del retrato de una persona requiere de su consentimiento.</p>
+            <div class="alert-box">
+                <p>Al contratar y recibir nuestros servicios, <strong>usted otorga su consentimiento expreso</strong> para que el prestador de servicios tome registro fotográfico y de video del proceso y del resultado final del maquillaje. Este material será utilizado exclusivamente para integrarse al portafolio profesional del estudio y ser difundido en nuestro sitio web oficial y redes sociales oficiales (como Instagram o Facebook).</p>
+            </div>
+            <p><strong>Excepción / Cláusula de Oposición:</strong> Si usted prefiere que sus fotografías o videos no sean publicados en ninguna plataforma digital, únicamente deberá manifestarlo de manera expresa y por escrito (vía correo electrónico o mensaje directo) antes de dar inicio a su servicio de maquillaje, y respetaremos enteramente su decisión de privacidad.</p>
+        </section>
+
+        <!-- ================= SECCIÓN 4: RECOMENDACIONES Y PREPARACIÓN DEL SERVICIO ================= -->
+        <section id="recomendaciones">
+            <h2>4. Recomendaciones del Servicio</h2>
+            <p>Para asegurar que su maquillaje tenga el acabado impecable y la máxima durabilidad que nos caracteriza, le sugerimos seguir las siguientes recomendaciones de preparación el día de su cita:</p>
+            <ul>
+                <li>Presentarse con el rostro completamente limpio, lavado y libre de cualquier residuo de maquillaje previo.</li>
+                <li>Mantener su piel hidratada los días previos al servicio bebiendo suficiente agua y aplicando su crema hidratante habitual.</li>
+                <li>Evitar el uso de productos exfoliantes o tratamientos faciales agresivos en las 72 horas previas a la cita para prevenir irritaciones.</li>
+                <li>Evitar la exposición prolongada al sol o a camas de bronceado en los días previos al servicio para prevenir quemaduras o descamación de la piel.</li>
+                <li>Evitar el consumo de alcohol o alimentos muy grasosos antes de la cita, ya que pueden afectar la apariencia de la piel y la fijación del maquillaje.</li>
+                <li>En caso de presentar algun tratamiento facial agresivo, es importante avisar con anticipación.</li>
+                <li>Evitar realizarse depilaciones faciales (con cera o hilo) o tratamientos dermatológicos invasivos en las 48 horas previas a la cita para evitar irritaciones.</li>
+            </ul>
+            <p><strong>Responsabilidad de salud:</strong> Es obligación del cliente informar de forma preventiva si padece de alguna alergia severa a componentes cosméticos, hipersensibilidad o infecciones cutáneas/oculares activas, con el fin de utilizar los productos adecuados o, en su caso, suspender la aplicación por seguridad e higiene.</p>
+        </section>
+
+        <!-- ================= SECCIÓN 5: PROPIEDAD INTELECTUAL Y DERECHOS DE AUTOR ================= -->
+        <section id="autor">
+            <h2>5. Derechos de Autor y Propiedad Intelectual</h2>
+            <p>Todo el contenido mostrado en este sitio web, incluyendo de forma enunciativa pero no limitativa: diseños, estructura de código HTML/CSS, textos explicativos, logotipos, imagotipos, así como la totalidad de las **fotografías, videos y obras visuales de maquillaje** expuestas en el portafolio, se encuentran protegidos por la <strong>Ley Federal del Derecho de Autor</strong> en México.</p>
+            <p><strong>Propiedad del material:</strong> La autoría y derechos de explotación comercial de todo el material visual de este sitio pertenecen de forma exclusiva a la marca comercial del estudio y su creador.</p>
+            <ul>
+                <li>Queda estrictamente prohibida la copia, reproducción parcial o total, distribución, edición o uso comercial de cualquier imagen o texto de este sitio sin la autorización previa y por escrito de la titular de la marca.</li>
+                <li>Cualquier uso no autorizado de nuestro material fotográfico o intelectual será sancionado conforme a los lineamientos legales correspondientes de propiedad industrial e intelectual vigentes en México.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <a href="../index.html" class="back-home">← Volver al Sitio Principal</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
