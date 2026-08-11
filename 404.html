@@ -1,216 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página No Encontrada (404) | Makeup Xaret</title>
-    <style>
-        /* --- VARIABLES DE DISEÑO (Misma paleta de la web principal) --- */
-        :root {
-            --bg-color: #FAF8F6;
-            --card-bg: #FFFFFF;
-            --primary-gold: #D4AF37;
-            --rose-gold: #E5C3B3;
-            --text-main: #1E293B;
-            --text-muted: #64748B;
-            --border-color: #F1F5F9;
-            --accent-soft: rgba(229, 195, 179, 0.15);
-        }
-
-        /* --- ESTILOS GENERALES --- */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .error-container {
-            max-width: 550px;
-            width: 100%;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 24px;
-            padding: 50px 40px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* --- DETALLE DECORATIVO (Efecto "Makeup Swatch" de fondo) --- */
-        .error-container::before {
-            content: "";
-            position: absolute;
-            top: -50px;
-            right: -50px;
-            width: 150px;
-            height: 150px;
-            background: radial-gradient(circle, var(--accent-soft) 0%, rgba(255,255,255,0) 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        /* --- MARCA Y LOGO --- */
-        .brand-logo {
-            font-size: 18px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--text-main);
-            margin-bottom: 5px;
-        }
-
-        .brand-subtitle {
-            font-size: 9px;
-            color: var(--primary-gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-            margin-bottom: 40px;
-        }
-
-        /* --- SECCIÓN DEL NÚMERO 404 --- */
-        .error-code-wrapper {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .error-code {
-            font-size: 96px;
-            font-weight: 800;
-            line-height: 1;
-            letter-spacing: -2px;
-            background: linear-gradient(135deg, var(--text-main) 30%, var(--primary-gold) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Trazo decorativo que simula un "brochazo" o swatch de maquillaje */
-        .makeup-swatch {
-            width: 140px;
-            height: 12px;
-            background: var(--rose-gold);
-            margin: -10px auto 30px;
-            border-radius: 20px;
-            opacity: 0.7;
-            filter: blur(1px);
-        }
-
-        /* --- TEXTOS --- */
-        h1 {
-            font-size: 22px;
-            font-weight: 700;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
-        }
-
-        p {
-            font-size: 14px;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin-bottom: 35px;
-            padding: 0 10px;
-        }
-
-        /* --- BOTONES DE ACCIÓN --- */
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            max-width: 280px;
-            margin: 0 auto;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 14px 24px;
-            border-radius: 30px;
-            font-size: 13px;
-            font-weight: 600;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary {
-            background-color: var(--text-main);
-            color: #FFFFFF;
-            border: 1px solid var(--text-main);
-            box-shadow: 0 4px 12px rgba(30, 41, 59, 0.15);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--rose-gold);
-            border-color: var(--rose-gold);
-            box-shadow: 0 4px 12px rgba(229, 195, 179, 0.3);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--text-main);
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-secondary:hover {
-            background-color: var(--bg-color);
-            border-color: var(--rose-gold);
-        }
-
-        /* --- RESPONSIVO --- */
-        @media (max-width: 480px) {
-            .error-container {
-                padding: 40px 20px;
-            }
-            .error-code {
-                font-size: 80px;
-            }
-            h1 {
-                font-size: 19px;
-            }
-            p {
-                font-size: 13px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Página No Encontrada (404) | Makeup Xaret</title>
+  <meta name="description" content="La página solicitada no existe o ha sido movida. Regresa al inicio de Makeup Xaret.">
+  <link rel="shortcut icon" href="MakeUpXaret.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-wrapper {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .error-card {
+      max-width: 540px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.035);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 48px 36px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      backdrop-filter: blur(10px);
+    }
+    .error-code {
+      font-family: var(--font-serif);
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      background: linear-gradient(90deg, var(--accent-pink), var(--accent-violet));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+    .error-swatch {
+      width: 120px;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent-pink), var(--accent-violet));
+      margin: 0 auto 24px;
+      border-radius: var(--radius-pill);
+    }
+    .error-title {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    .error-desc {
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .error-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="error-container">
-        
-        <!-- Cabecera de Marca -->
-        <div class="brand-logo">Makeup Xaret</div>
-        <div class="brand-subtitle">Maquillista Profesional & Diseñadora de Imagen</div>
-
-        <!-- Área Gráfica del Error -->
-        <div class="error-code-wrapper">
-            <div class="error-code">404</div>
-        </div>
-        <div class="makeup-swatch"></div>
-
-        <!-- Mensajes con analogía de maquillaje -->
-        <h1>¡Ups! Este look se ha difuminado</h1>
-        <p>La página que estás buscando no existe, ha cambiado de lugar o se encuentra en proceso de retoque. ¡No te preocupes, podemos volver a empezar!</p>
-
-        <!-- Botones de navegación directa -->
-        <div class="btn-container">
-            <a href="index.html" class="btn btn-primary">Volver al Inicio</a>
-            <a href="https://wa.me/7221659309?text=%C2%A1Hola%2C%20Gabriela%21%20Vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." class="btn btn-secondary">Escríbenos por WhatsApp</a>
-        </div>
-
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="header-brand">Makeup Xaret</a>
+      <nav class="nav" aria-label="Navegación secundaria">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#servicios">Servicios</a>
+      </nav>
     </div>
+  </header>
 
+  <main class="error-wrapper">
+    <div class="error-card">
+      <div class="error-code">404</div>
+      <div class="error-swatch"></div>
+      <h1 class="error-title">¡Ups! Este look se ha difuminado</h1>
+      <p class="error-desc">La página que estás buscando no existe, ha cambiado de lugar o se encuentra en proceso de retoque. ¡No te preocupes, podemos volver al inicio!</p>
+      
+      <div class="error-actions">
+        <a href="index.html" class="btn primary">Volver al Inicio</a>
+        <a href="https://wa.me/527221659309?text=%C2%A1Hola%2C%20Gabriela%21%20Vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" class="btn ghost">Contacto por WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer site-footer--dark" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <h3 class="footer-title">Makeup Xaret</h3>
+        <p class="footer-quote">«Resaltando tu belleza en cada momento especial.»</p>
+      </div>
+      <div class="footer-center">
+        <p class="footer-contact-label">Contacto</p>
+        <p class="footer-email"><a href="mailto:MakeUpXaret@gmail.com" class="email-link">MakeUpXaret@gmail.com</a></p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-rights">© <span class="current-year"></span> Makeup Xaret</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.current-year').forEach(el => el.textContent = new Date().getFullYear());
+  </script>
 </body>
 </html>
