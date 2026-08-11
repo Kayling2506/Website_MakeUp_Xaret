@@ -137,7 +137,7 @@
 
           <div class="socials" aria-label="Redes sociales">
             <a class="social" href="https://www.instagram.com/makeup_xcaret/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-            <a class="social" href="https://wa.me/527221659309?text=%C2%A1Hola%2C%20Gabriela%21%20Vi%20tu%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20ponerme%20en%20contacto%20contigo." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+            <a class="social" href="#" onclick="openQuoteModal(event); return false;" aria-label="WhatsApp">WhatsApp</a>
           </div>
         </div>
       </div>
@@ -358,6 +358,72 @@
       </div>
     </section>
   </main>
+
+  <!-- Ventana Modal Emergente: Cotizador a WhatsApp -->
+  <div id="quote-modal" class="quote-modal" onclick="handleModalBackdropClick(event)" aria-hidden="true" role="dialog" aria-labelledby="modal-quote-title">
+    <div class="quote-modal-content">
+      <button type="button" class="modal-close-btn" onclick="closeQuoteModal()" aria-label="Cerrar ventana">&times;</button>
+      
+      <div class="quote-header">
+        <h2 id="modal-quote-title" class="section-title">Cotiza & Consulta Disponibilidad</h2>
+        <p class="section-lead">Selecciona los detalles de tu evento y recibe atención personalizada al instante por WhatsApp.</p>
+      </div>
+
+      <form id="quote-form" class="quote-form" onsubmit="event.preventDefault(); window.sendWhatsAppQuote();">
+        <div class="form-grid">
+          <!-- Servicio -->
+          <div class="form-group">
+            <label for="service-select" class="form-label">Tipo de Servicio</label>
+            <select id="service-select" class="form-control" required>
+              <option value="Maquillaje Social (Día)">Maquillaje Social de Día</option>
+              <option value="Maquillaje Social (Noche)">Maquillaje Social de Noche</option>
+              <option value="Maquillaje de Novia">Maquillaje de Novia</option>
+              <option value="Maquillaje para Sesión de Fotos">Maquillaje para Sesión de Fotos</option>
+              <option value="Maquillaje Express / Bautizo">Maquillaje Express / Bautizo</option>
+              <option value="Asesoría & Tips de Maquillaje">Asesoría &amp; Tips de Maquillaje</option>
+            </select>
+          </div>
+
+          <!-- Fecha -->
+          <div class="form-group">
+            <label for="date-input" class="form-label">Fecha del Evento</label>
+            <input type="date" id="date-input" class="form-control" required>
+          </div>
+
+          <!-- Ubicación / Modalidad -->
+          <div class="form-group">
+            <label for="location-select" class="form-label">Modalidad / Ubicación</label>
+            <select id="location-select" class="form-control" required>
+              <option value="A domicilio (Toluca)">A domicilio (Toluca)</option>
+              <option value="A domicilio (Metepec)">A domicilio (Metepec)</option>
+              <option value="A domicilio (Zinacantepec / Lerma / Aledaños)">A domicilio (Zinacantepec / Lerma / Aledaños)</option>
+              <option value="En estudio">En estudio</option>
+            </select>
+          </div>
+
+          <!-- Personas -->
+          <div class="form-group">
+            <label for="people-select" class="form-label">Número de Personas</label>
+            <select id="people-select" class="form-control" required>
+              <option value="1 persona">1 persona (Solo para mí)</option>
+              <option value="2 personas">2 personas</option>
+              <option value="3 a 5 personas">3 a 5 personas (Grupo / Damas de Honor)</option>
+              <option value="Más de 5 personas">Más de 5 personas (Evento masivo)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn-whatsapp-quote">
+            <svg class="whatsapp-icon" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984 0 1.764.459 3.487 1.332 5.006l-1.417 5.176 5.302-1.39a9.92 9.92 0 0 0 4.773 1.218h.004c5.505 0 9.988-4.478 9.989-9.985 0-2.668-1.037-5.176-2.923-7.062a9.92 9.92 0 0 0-7.07-2.947zm5.666 14.153c-.234.66-1.157 1.211-1.605 1.284-.447.073-.974.127-3.14-.768-2.613-1.077-4.282-3.738-4.412-3.911-.13-.173-1.061-1.41-1.061-2.69 0-1.28.67-1.91 0.908-2.17.238-.26.52-.325.694-.325.173 0 .347.002.498.009.16.007.375-.06.586.446.217.52.736 1.797.801 1.928.065.13.109.282.022.455-.087.173-.13.282-.26.433-.13.152-.272.338-.39.455-.13.13-.266.27-.115.53.152.26.674 1.112 1.447 1.802.994.887 1.833 1.162 2.093 1.293.26.13.412.109.563-.065.152-.173.65-.757.823-1.017.173-.26.347-.217.585-.13.238.087 1.516.715 1.776.845.26.13.433.195.498.303.065.109.065.628-.169 1.288z"/>
+            </svg>
+            Consultar Disponibilidad en WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer (insertado usando las clases definidas en styles.css) -->
   <footer class="site-footer site-footer--dark" role="contentinfo">
