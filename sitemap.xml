@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generado para optimización SEO de Makeup Xaret -->
+<!-- Sitemap de Makeup Xaret -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- 1. Página de Inicio (La más importante) -->
+  <!-- 1. Página Principal -->
   <url>
     <loc>https://makeupxaret.com/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- 2. Página de Términos, Condiciones y Privacidad -->
+  <!-- 2. Términos y Políticas de Privacidad -->
   <url>
     <loc>https://makeupxaret.com/privacy-policy.html</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
