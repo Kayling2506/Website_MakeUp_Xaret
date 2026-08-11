@@ -90,4 +90,82 @@ globalOverlay.style.position = 'fixed';
 globalOverlay.style.inset = '0';
 globalOverlay.style.pointerEvents = 'none';
 document.body.appendChild(globalOverlay);
+
+// Functions for WhatsApp Quote & Schedule Modal Popup
+window.openQuoteModal = function(e) {
+  if (e && e.preventDefault) e.preventDefault();
+  const modal = document.getElementById('quote-modal');
+  if (modal) {
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+};
+
+window.closeQuoteModal = function() {
+  const modal = document.getElementById('quote-modal');
+  if (modal) {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+};
+
+window.handleModalBackdropClick = function(e) {
+  if (e.target && e.target.id === 'quote-modal') {
+    window.closeQuoteModal();
+  }
+};
+
+window.sendWhatsAppQuote = function() {
+  const serviceEl = document.getElementById('service-select');
+  const dateEl = document.getElementById('date-input');
+  const locationEl = document.getElementById('location-select');
+  const peopleEl = document.getElementById('people-select');
+
+  const service = serviceEl ? serviceEl.value : 'Maquillaje Profesional';
+  const dateRaw = dateEl ? dateEl.value : '';
+  const location = locationEl ? locationEl.value : 'Toluca / Metepec';
+  const people = peopleEl ? peopleEl.value : '1 persona';
+
+  let formattedDate = 'Por definir';
+  if (dateRaw) {
+    const parts = dateRaw.split('-');
+    if (parts.length === 3) {
+      formattedDate = `${parts[2]}/${parts[1]}/${parts[0]}`;
+    }
+  }
+
+  const text = `¡Hola, Gabriela! Vi tu página web y me gustaría consultar disponibilidad para una cita:\n\n` +
+    `• Servicio: ${service}\n` +
+    `• Fecha estimada: ${formattedDate}\n` +
+    `• Modalidad / Ubicación: ${location}\n` +
+    `• Personas: ${people}\n\n` +
+    `¿Tienes disponibilidad para esta fecha?`;
+
+  const phone = '527221659309';
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank', 'noopener,noreferrer');
+
+  window.closeQuoteModal();
+};
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    window.closeQuoteModal();
+  }
+});
+
+const initDateInputMin = function() {
+  const dateInput = document.getElementById('date-input');
+  if (dateInput) {
+    dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+  }
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initDateInputMin);
+} else {
+  initDateInputMin();
+}
 })();
