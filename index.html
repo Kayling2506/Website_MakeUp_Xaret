@@ -54,13 +54,20 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <a href="#inicio" class="brand-logo">MakeUp<span>Xaret</span></a>
-      <nav class="nav" aria-label="Navegación principal">
+
+      <button type="button" id="mobile-menu-btn" class="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <nav id="main-nav" class="nav" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#servicios">Servicios</a>
         <a href="#asesorias">Asesorías</a>
       </nav>
-      <div></div>
+      <div class="header-spacer"></div>
     </div>
   </header>
 
@@ -412,6 +419,27 @@
           modal.setAttribute('aria-hidden', 'false');
         }
       }
+    }
+
+    // Lógica del menú hamburguesa en móvil
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mainNav = document.getElementById('main-nav');
+
+    if (menuBtn && mainNav) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('is-open');
+        menuBtn.classList.toggle('is-active', isOpen);
+        menuBtn.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Cierra el menú automáticamente al hacer clic en una sección
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('is-open');
+          menuBtn.classList.remove('is-active');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        });
+      });
     }
   </script>
 </body>
